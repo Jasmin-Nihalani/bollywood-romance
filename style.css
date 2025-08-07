@@ -259,7 +259,7 @@ html {
       z-index: 1;
     }
   
-    .svg-image {
+    /* .svg-image {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -267,7 +267,20 @@ html {
       width: 100vw;
       height: 100vh;
       object-fit: contain;
-    }
+    } */
+
+    .svg-image {
+        width: 60vw;         /* keep container fit */
+        height: 80vh;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(1.5); /* tweak 1.3–1.8 per chart */
+            }
+    
+      
   
     .scrolly-text {
       width: 90vw;
