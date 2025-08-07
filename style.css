@@ -61,7 +61,7 @@ html {
     max-height: 90vh;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 54%;
     transform: translateX(-45%);
     width: auto;
     height: 100vh;
@@ -278,8 +278,28 @@ html {
       margin: 85vh auto;
       font-size: 16px;
     }
+
+    .intro {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .byline {
+        margin-left: 3%;
+    }
+
+    .legend-box {
+        display: grid;
+        align-items: center;
+        line-height: 20px;
+        text-align: left;
+        top: 5%;
+        left: 6%;
+        
+        
+    }
+
   }
-  
   
   
   
