@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    width: 100%;
+    height: 100%;
+    background: #0e0100;
+    font-family: Georgia, serif;
+    color: #D3D3D3;
+    font-size: clamp(16px, 1.2vw, 18px);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.video-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 99999;
+}
+
+.byline {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 0 2rem 0;
+    text-align: left;
+    line-height: 1.2;
+    
+}
+
+.sub_line {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5rem;
+}
+ 
+.svg-image {
+    max-width: 90%;
+    max-height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-45%);
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+.scrolly-text {
+    width: 40vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  
+  .step {
+    background: white;
+    color: black;
+    padding: 1.25rem;
+    margin: 50vh auto;
+    font-size: 18px;
+    line-height: 1.2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 550px;
+  }
+  
+
+.scrolly-overlay {
+    position: relative;
+    width: 100%;
+  }
+  
+.graphic-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+/* LEGEND BOX */
+
+.legend-box {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 0.9rem;
+    z-index: 10; /* was buried under SVGs before */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+    max-width: 250px;
+  }
+  
+.legend-box.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #dedede;
+  }
+  
+.legend-color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
+    /*border-radius: 2px;*/
+  }
+  
+.legend-color.action   { background-color: #3AA344; }
+.legend-color.romance  { background-color: #F54ABC; }
+.legend-color.comedy   { background-color: #0079B8; }
+.legend-color.drama    { background-color: #BB9900; }
+.legend-color.others    { background-color: #787878; }
+.legend-color.political    { background-color: #B61212; }
+
+.step:last-child {
+    margin-bottom: 180vh;  /* Adjust as needed: 150–200vh works well */
+  }
+
+
+@media (max-width: 1200px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .intro,
+    .byline,
+    .step {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .intro,
+    .byline,
+    .step {
+      font-size: 16px;
+    }
+  }
+
+.female-director {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #0e0100;
+  }
+  
+.chart-2 {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+.female-lead {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #0e0100;
+  }
+  
+.chart-3 {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }  
+  
+
+  @media screen and (max-width: 767px) {
+    .graphic-container {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+  
+    .svg-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+    }
+  
+    .scrolly-text {
+      width: 90vw;
+      margin: 0 auto;
+    }
+  
+    .step {
+      margin: 85vh auto;
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
